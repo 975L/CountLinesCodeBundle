@@ -60,8 +60,4 @@ class AppKernel extends Kernel
 Usage
 =====
 
-To use it, just type (at the root of your Symfony2 project):
-`php bin/console count:loc`
-
-
-
+To use it, just type (at the root of your Symfony2 project): `php bin/console count:loc`
