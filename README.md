@@ -62,5 +62,5 @@ Usage
 
 To use it, just type (at the root of your Symfony2 project):
 ```bash
-php bin/console count:loc
+$ php bin/console count:loc
 ```
