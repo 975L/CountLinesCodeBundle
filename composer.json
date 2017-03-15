@@ -1,26 +1,32 @@
 {
-    "name": "bastienl/symfony2loc-bundle",
-    "description": "Count lines of code you wrote in your Symfony2 project",
-    "keywords": [ "loc", "symfony" ],
+    "name": "c975l/symfonycountlinescode-bundle",
     "type": "symfony-bundle",
+    "description": "This bundle counts the lines of code written in a Symfony project",
+    "keywords": ["count", "code", "symfony", "bundle"],
+    "homepage": "https://github.com/975L/SymfonyCountLinesCode",
     "license": "MIT",
     "authors": [
         {
-        "name": "Bastien Libersa",
-        "email": "bastien.libersa@gmail.com"
-    }
+            "name": "Laurent Marquet",
+            "email": "laurent.marquet@laposte.net",
+            "homepage": "https://github.com/Laurent3170",
+            "role": "Developer"
+            "name": "Bastien Libersa",
+            "email": "bastien.libersa@gmail.com"
+        },
+        {
+            "name": "975L Community",
+            "homepage": "https://github.com/975L"
+        }
     ],
     "require": {
-        "symfony/framework-bundle": "~2.3",
-        "symfony/console": "~2.3"
+        "php": ">=5.5.9",
+        "symfony/framework-bundle": ">=3.0",
+        "sensio/framework-extra-bundle": "^3.0.2"
     },
+    "minimum-stability": "dev",
     "autoload": {
-        "psr-0": { "BastienL\\Bundle\\Symfony2LocBundle": "" }
-    },
-    "target-dir": "BastienL/Bundle/Symfony2LocBundle",
-    "extra": {
-        "branch-alias": {
-            "master": "0.1-dev"
+        "psr-4": { "c975L\\SymfonyCountLinesCodeBundle\\": ""
         }
     }
 }

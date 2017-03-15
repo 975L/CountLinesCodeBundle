@@ -1,40 +1,67 @@
-Symfony2Loc
+SymfonyCountLinesCode
 =========
 
-Symfony2Loc is an extremely simple Symfony2 bundle that counts the number of lines of code you wrote in your Symfony2 project.
+SymfonyCountLinesCode is an extremely simple Symfony bundle that counts the number of lines of code written in Symfony project.
 
-It goes through all the bundles in the src/ directory, and counts the number of lines in the `.php`, `.twig`, `.js` and `.css` files.
+It goes through specified directories and counts the number of lines in the `.php`, `.twig`, `.js` and `.css` files.
+
+SymfonyCountLinesCode was forked from https://github.com/BastienL/Symfony2Loc.
 
 
-Installation
-------------
+BundleInstallation
+==================
 
-To install it, just add the following line to your composer.json file:
-	`"bastienl/symfony2loc-bundle" : "dev-master"`
-	
-And register it in `app/AppKernel.php`:
+Step 1: Download the Bundle
+---------------------------
 
-``` php
+Open a command console, enter your project directory and execute the
+following command to download the latest stable version of this bundle:
+**We strongly recommend to use this only on the dev part**
+
+```bash
+$ composer require-dev c975l/symfonycountlinescode-bundle "1.*"
+```
+
+This command requires you to have Composer installed globally, as explained
+in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
+of the Composer documentation.
+
+Step 2: Enable the Bundle
+-------------------------
+
+Then, enable the bundle by adding it to the list of registered bundles
+in the `app/AppKernel.php` file of your project:
+
+```php
 <?php
 // app/AppKernel.php
-public function registerBundles()
+
+// ...
+class AppKernel extends Kernel
 {
-    return array(
+    public function registerBundles()
+    {
+        $bundles = [
+            // ...
+        ];
+
+        if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
+            // ...
+            $bundles[] = new c975L\SymfonyCountLinesCodeBundle\c975LSymfonyCountLinesCodeBundle();
+        }
+
         // ...
-        new BastienL\Bundle\Symfony2LocBundle\Symfony2LocBundle(),
-    );
+    }
+
+    // ...
 }
 ```
 
-
 Usage
------
+=====
 
 To use it, just type (at the root of your Symfony2 project):
-`php app/console count:loc`
+`php bin/console count:loc`
 
 
-About
------
-You can find this project on packagist: https://packagist.org/packages/bastienl/symfony2loc-bundle
 
