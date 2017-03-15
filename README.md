@@ -13,13 +13,20 @@ BundleInstallation
 
 Step 1: Download the Bundle
 ---------------------------
-
-Open a command console, enter your project directory and execute the
-following command to download the latest stable version of this bundle:
 **We strongly recommend to use this only on the dev part**
 
+Add the following to your `composer.json > require-dev section`
+```
+"require-dev": {
+    ...
+    "c975l/symfonycountlinescode-bundle": "1.*"
+},
+```
+Then open a command console, enter your project directory and update composer,
+by executing the following command, to download the latest stable version of this bundle:
+
 ```bash
-$ composer require-dev c975l/symfonycountlinescode-bundle "1.*"
+$ composer update
 ```
 
 This command requires you to have Composer installed globally, as explained
