@@ -9,10 +9,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace c975L\SymfonyCountLinesCodeBundle;
+namespace c975L\CountLinesCodeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class c975LSymfonyCountLinesCodeBundle extends Bundle
+class c975LCountLinesCodeBundle extends Bundle
 {
 }

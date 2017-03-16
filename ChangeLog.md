@@ -1,5 +1,10 @@
 # Changelog
 
+v1.2
+------
+- Renaming to CountLinesCodeBundle (16/03/2017)
+- Downgraded Symfony supported version to 2
+
 v1.1.2
 ------
 - Modifications in REAME.md due to `composer -require-dev` does not exist (15/03/2017)

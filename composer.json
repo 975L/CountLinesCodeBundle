@@ -1,5 +1,5 @@
 {
-    "name": "c975l/symfonycountlinescode-bundle",
+    "name": "c975l/countlinescode-bundle",
     "type": "symfony-bundle",
     "description": "This bundle counts the lines of code written in a Symfony project",
     "keywords": ["count", "code", "symfony", "bundle"],
@@ -13,6 +13,7 @@
             "role": "Developer",
             "name": "Bastien Libersa",
             "email": "bastien.libersa@gmail.com",
+            "homepage": "https://github.com/BastienL",
             "role": "Developer"
         },
         {
@@ -27,7 +28,7 @@
     },
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": { "c975L\\SymfonyCountLinesCodeBundle\\": ""
+        "psr-4": { "c975L\\CountLinesCodeBundle\\": ""
         }
     }
 }

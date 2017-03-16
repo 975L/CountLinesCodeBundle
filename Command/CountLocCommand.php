@@ -1,5 +1,14 @@
 <?php
-namespace c975L\SymfonyCountLinesCodeBundle\Command;
+/*
+ * (c) 2017: 975l <contact@975l.com>
+ * (c) 2017: Laurent Marquet <laurent.marquet@laposte.net>
+ *
+ * Fork from: https://github.com/BastienL/Symfony2Loc
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+namespace c975L\CountLinesCodeBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Style\SymfonyStyle;

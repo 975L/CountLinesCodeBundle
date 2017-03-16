@@ -19,7 +19,7 @@ Add the following to your `composer.json > require-dev section`
 ```
 "require-dev": {
     ...
-    "c975l/symfonycountlinescode-bundle": "1.*"
+    "c975l/countlinescode-bundle": "1.*"
 },
 ```
 Then open a command console, enter your project directory and update composer,
@@ -54,7 +54,7 @@ class AppKernel extends Kernel
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
             // ...
-            $bundles[] = new c975L\SymfonyCountLinesCodeBundle\c975LSymfonyCountLinesCodeBundle();
+            $bundles[] = new c975L\CountLinesCodeBundle\c975LCountLinesCodeBundle();
         }
 
         // ...
