@@ -1,8 +1,12 @@
 # Changelog
 
+v1.3.1
+------
+- Error in composer.json (17/03/2017)
+
 v1.3
 ------
-- Add of taking folders and extensions from `config_dev.yml` (17/03/2017)
+- Add of taking folders and extensions from config_dev.yml (17/03/2017)
 
 v1.2
 ------

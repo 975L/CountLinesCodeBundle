@@ -1,5 +1,5 @@
 {
-    "name": "c975L/countlinescode-bundle",
+    "name": "c975l/countlinescode-bundle",
     "type": "symfony-bundle",
     "description": "This bundle counts the lines of code written in a Symfony project",
     "keywords": ["count", "code", "symfony", "bundle"],
@@ -7,14 +7,10 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Bastien Libersa",
-            "email": "bastien.libersa@gmail.com",
-            "homepage": "https://github.com/BastienL",
-            "role": "Developer"
             "name": "Laurent Marquet",
             "email": "laurent.marquet@laposte.net",
             "homepage": "https://github.com/Laurent3170",
-            "role": "Developer",
+            "role": "Developer"
         },
         {
             "name": "975L Community",
@@ -23,7 +19,7 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "symfony/framework-bundle": ">=3.0",
+        "symfony/framework-bundle": "^3.0",
         "sensio/framework-extra-bundle": "^3.0.2"
     },
     "minimum-stability": "dev",
