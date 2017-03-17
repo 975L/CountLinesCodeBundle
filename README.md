@@ -1,11 +1,11 @@
-SymfonyCountLinesCode
+CountLinesCode
 =========
 
-SymfonyCountLinesCode is an extremely simple Symfony bundle that counts the number of lines of code written in Symfony project.
+CountLinesCode is an extremely simple Symfony bundle that counts the number of lines of code written in Symfony project.
 
 It goes through specified directories and counts the number of lines in the `.php`, `.twig`, `.js` and `.css` files.
 
-SymfonyCountLinesCode was forked from https://github.com/BastienL/Symfony2Loc.
+CountLinesCode was forked from https://github.com/BastienL/Symfony2Loc.
 
 
 BundleInstallation
@@ -19,7 +19,7 @@ Add the following to your `composer.json > require-dev section`
 ```
 "require-dev": {
     ...
-    "c975l/countlinescode-bundle": "1.*"
+    "c975L/countlinescode-bundle": "1.*"
 },
 ```
 Then open a command console, enter your project directory and update composer,
@@ -64,6 +64,20 @@ class AppKernel extends Kernel
 }
 ```
 
+Step 3: Define folders and extensions to look for
+--------------------------------------------------
+
+Then define the list of folders and extensions you want to look for in the `app/config_dev.yml` file of your project:
+
+```yml
+// app/config_dev.yml
+
+...
+c975_l_count_lines_code:
+    extensions: ['css', 'js', 'php', 'sh', 'sql', 'twig']
+    folders: ['app/Resources/views', 'src/AppBundle', 'tests/AppBundle', 'web/css', 'web/js']
+```
+
 Usage
 =====
 
@@ -71,3 +85,7 @@ To use it, just type (at the root of your Symfony2 project):
 ```bash
 $ php bin/console count:loc
 ```
+
+TODO
+====
+Improve counting command

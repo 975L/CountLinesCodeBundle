@@ -1,6 +1,6 @@
 <?php
 /*
- * (c) 2017: 975l <contact@975l.com>
+ * (c) 2017: 975L <contact@975l.com>
  * (c) 2017: Laurent Marquet <laurent.marquet@laposte.net>
  *
  * Fork from: https://github.com/BastienL/Symfony2Loc
@@ -27,42 +27,34 @@ class CountLocCommand extends ContainerAwareCommand
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         //Creates tmp Directory if not exists
-        $directory = 'var/tmp/SymfonyCountLinesCode/';
+        $directory = 'var/tmp/CountLinesCode/';
         if (!is_dir($directory)) mkdir($directory, 0777, true);
 
-        $folders = array(
-            'src/',
-            'app/Resources/views/',
-            'tests/',
-            'web/css/',
-        );
-
-        $extensions = array(
-            'php',
-            'js',
-            'twig',
-            'css'
-        );
+        //Gets data
+        $extensions = $this->getContainer()->getParameter('c975_l_count_lines_code.extensions');
+        $folders = $this->getContainer()->getParameter('c975_l_count_lines_code.folders');
 
         //Creates the command line to be executed
         $resultFinal = 0;
         $resultOuput = array();
         foreach ($folders as $folder) {
-            $filename = $directory . str_replace('/', '', $folder);
+            if (is_dir($folder)) {
+                $filename = $directory . str_replace('/', '', $folder);
 
-            $command = "wc --lines `find $folder -iname ";
-            foreach($extensions as $key => $extension) {
-                $command .= '"*.' . $extension . '"';
-                if($key < count($extensions) - 1) {
-                    $command .= ' -o -iname ';
+                $command = "wc --lines `find $folder -iname ";
+                foreach($extensions as $key => $extension) {
+                    $command .= '"*.' . $extension . '"';
+                    if($key < count($extensions) - 1) {
+                        $command .= ' -o -iname ';
+                    }
                 }
+                $command .= "` > $filename.txt && tail -1 $filename.txt;";
+
+                $result = (int) preg_replace('/\D/', '', shell_exec($command));
+
+                $resultOuput[] = array($folder, $result);
+                $resultFinal += $result;
             }
-            $command .= "` > $filename.txt && tail -1 $filename.txt;";
-
-            $result = (int) preg_replace('/\D/', '', shell_exec($command));
-
-            $resultOuput[] = array($folder, $result);
-            $resultFinal += $result;
         }
 
         //Output data

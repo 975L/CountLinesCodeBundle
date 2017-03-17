@@ -1,5 +1,9 @@
 # Changelog
 
+v1.3
+------
+- Add of taking folders and extensions from `config_dev.yml` (17/03/2017)
+
 v1.2
 ------
 - Renaming to CountLinesCodeBundle (16/03/2017)

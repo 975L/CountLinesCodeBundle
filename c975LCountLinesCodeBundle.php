@@ -1,6 +1,6 @@
 <?php
 /*
- * (c) 2017: 975l <contact@975l.com>
+ * (c) 2017: 975L <contact@975l.com>
  * (c) 2017: Laurent Marquet <laurent.marquet@laposte.net>
  *
  * Fork from: https://github.com/BastienL/Symfony2Loc
