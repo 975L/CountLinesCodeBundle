@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "This bundle counts the lines of code written in a Symfony project",
     "keywords": ["count", "code", "symfony", "bundle"],
-    "homepage": "https://github.com/975L/CountLinesCode",
+    "homepage": "https://github.com/975L/CountLinesCodeBundle",
     "license": "MIT",
     "authors": [
         {

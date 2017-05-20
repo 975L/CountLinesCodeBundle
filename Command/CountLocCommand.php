@@ -59,7 +59,7 @@ class CountLocCommand extends ContainerAwareCommand
 
         //Output data
         $io = new SymfonyStyle($input, $output);
-        $io->title('Symfony Count Lines Code');
+        $io->title('Count Lines Code');
         $io->text('Lines of code have been counted for directories below, using the following extensions');
         $io->listing($extensions);
         $io->table(

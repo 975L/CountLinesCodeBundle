@@ -1,5 +1,9 @@
 # Changelog
 
+v1.3.2
+------
+- Corrections in README.md (20/05/2017)
+
 v1.3.1
 ------
 - Error in composer.json (17/03/2017)
@@ -15,12 +19,12 @@ v1.2
 
 v1.1.2
 ------
-- Modifications in REAME.md due to `composer -require-dev` does not exist (15/03/2017)
+- Modifications in README.md due to `composer -require-dev` does not exist (15/03/2017)
 - Add of LICENSE file
 
 v1.1.1
 ------
-- Modifications in REAME.md
+- Modifications in README.md
 
 v1.1
 ----

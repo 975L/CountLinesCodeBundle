@@ -1,11 +1,11 @@
-CountLinesCode
-=========
+CountLinesCodeBundle
+====================
 
-CountLinesCode is an extremely simple Symfony bundle that counts the number of lines of code written in Symfony project.
+CountLinesCodeBundle is an extremely simple Symfony bundle that counts the number of lines of code written in Symfony project.
 
-It goes through specified directories and counts the number of lines in the `.php`, `.twig`, `.js` and `.css` files.
+It goes through specified directories and counts the number of lines specified in the extensions files.
 
-CountLinesCode was forked from https://github.com/BastienL/Symfony2Loc.
+CountLinesCodeBundle was forked from https://github.com/BastienL/Symfony2Loc.
 
 
 BundleInstallation
@@ -65,7 +65,7 @@ class AppKernel extends Kernel
 ```
 
 Step 3: Define folders and extensions to look for
---------------------------------------------------
+-------------------------------------------------
 
 Then define the list of folders and extensions you want to look for in the `app/config_dev.yml` file of your project:
 
