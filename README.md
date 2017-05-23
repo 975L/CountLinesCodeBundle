@@ -8,8 +8,8 @@ It goes through specified directories and counts the number of lines specified i
 CountLinesCodeBundle was forked from https://github.com/BastienL/Symfony2Loc.
 
 
-BundleInstallation
-==================
+Bundle installation
+===================
 
 Step 1: Download the Bundle
 ---------------------------

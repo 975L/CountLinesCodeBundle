@@ -22,19 +22,17 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->arrayNode('extensions')
-                ->prototype('scalar')->end()
-                ->defaultValue(array(
-                    'php',
-                ))
-            ->end()
-        ;
-        $rootNode
-            ->children()
+                    ->prototype('scalar')->end()
+                    ->defaultValue(array(
+                        'php',
+                    ))
+                ->end()
                 ->arrayNode('folders')
-                ->prototype('scalar')->end()
-                ->defaultValue(array(
-                    'src',
-                ))
+                    ->prototype('scalar')->end()
+                    ->defaultValue(array(
+                        'src',
+                    ))
+                ->end()
             ->end()
         ;
 

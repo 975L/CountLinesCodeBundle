@@ -1,5 +1,9 @@
 # Changelog
 
+v1.3.3
+------
+- Simplification of rootNode (23/05/2017)
+
 v1.3.2
 ------
 - Corrections in README.md (20/05/2017)
@@ -13,7 +17,7 @@ v1.3
 - Add of taking folders and extensions from config_dev.yml (17/03/2017)
 
 v1.2
-------
+----
 - Renaming to CountLinesCodeBundle (16/03/2017)
 - Downgraded Symfony supported version to 2
 
