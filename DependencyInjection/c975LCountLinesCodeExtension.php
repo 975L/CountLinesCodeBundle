@@ -19,7 +19,7 @@ class c975LCountLinesCodeExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $configuration = new Configuration();
-        $processedConfig = $this->processConfiguration( $configuration, $configs );
+        $processedConfig = $this->processConfiguration($configuration, $configs);
 
         $container->setParameter('c975_l_count_lines_code.extensions', $processedConfig['extensions']);
         $container->setParameter('c975_l_count_lines_code.folders', $processedConfig['folders']);

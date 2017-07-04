@@ -1,5 +1,9 @@
 # Changelog
 
+v1.3.4
+------
+- Update of README.md (04/07/2017)
+
 v1.3.3
 ------
 - Simplification of rootNode (23/05/2017)
