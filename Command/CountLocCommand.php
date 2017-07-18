@@ -28,7 +28,9 @@ class CountLocCommand extends ContainerAwareCommand
     {
         //Creates tmp Directory if not exists
         $directory = 'var/tmp/CountLinesCode/';
-        if (!is_dir($directory)) mkdir($directory, 0777, true);
+        if (!is_dir($directory)) {
+            mkdir($directory, 0777, true);
+        }
 
         //Gets data
         $extensions = $this->getContainer()->getParameter('c975_l_count_lines_code.extensions');
@@ -42,9 +44,9 @@ class CountLocCommand extends ContainerAwareCommand
                 $filename = $directory . str_replace('/', '', $folder);
 
                 $command = "wc --lines `find $folder -iname ";
-                foreach($extensions as $key => $extension) {
+                foreach ($extensions as $key => $extension) {
                     $command .= '"*.' . $extension . '"';
-                    if($key < count($extensions) - 1) {
+                    if ($key < count($extensions) - 1) {
                         $command .= ' -o -iname ';
                     }
                 }

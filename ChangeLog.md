@@ -1,5 +1,10 @@
 # Changelog
 
+v1.3.5
+------
+- Run PHP CS-Fixer (18/07/2017)
+- Remove of .travis.yml as tests have to be defined before
+
 v1.3.4
 ------
 - Update of README.md (04/07/2017)

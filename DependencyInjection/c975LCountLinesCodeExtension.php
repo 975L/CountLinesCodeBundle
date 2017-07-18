@@ -24,6 +24,4 @@ class c975LCountLinesCodeExtension extends Extension
         $container->setParameter('c975_l_count_lines_code.extensions', $processedConfig['extensions']);
         $container->setParameter('c975_l_count_lines_code.folders', $processedConfig['folders']);
     }
-
 }
-
