@@ -19,12 +19,17 @@
     ],
     "require": {
         "php": ">=5.5.9",
-        "symfony/framework-bundle": "3.*",
-        "sensio/framework-extra-bundle": "3.*"
+        "symfony/framework-bundle": "^3",
+        "sensio/framework-extra-bundle": "^3"
     },
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": { "c975L\\CountLinesCodeBundle\\": ""
         }
+    },
+    "support": {
+        "email": "contact@975l.com",
+        "source": "https://github.com/975L/CountLinesCodeBundle",
+        "issues": "https://github.com/975L/CountLinesCodeBundle/issues"
     }
 }

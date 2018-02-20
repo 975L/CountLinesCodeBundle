@@ -18,22 +18,10 @@ Step 1: Download the Bundle
 ---------------------------
 **We strongly recommend to use this only on the dev part**
 
-Add the following to your `composer.json > require-dev section`
-```
-"require-dev": {
-    "c975L/countlinescode-bundle": "1.*"
-},
-```
-Then open a command console, enter your project directory and update composer,
-by executing the following command, to download the latest stable version of this bundle:
-
+Use [Composer](https://getcomposer.org) to install the library
 ```bash
-$ composer update
+    composer require-dev c975l/countlinescode-bundle
 ```
-
-This command requires you to have Composer installed globally, as explained
-in the [installation chapter](https://getcomposer.org/doc/00-intro.md)
-of the Composer documentation.
 
 Step 2: Enable the Bundle
 -------------------------
@@ -60,12 +48,14 @@ class AppKernel extends Kernel
 
 Step 3: Define folders and extensions to look for
 -------------------------------------------------
-Then define the list of folders and extensions you want to look for in the `app/config_dev.yml` file of your project:
+Then, in the `app/config_dev.yml` file of your project, define the following:
 
 ```yml
 c975_l_count_lines_code:
-    extensions: ['css', 'js', 'php', 'sh', 'sql', 'twig']
+    #List of folders you want to look for
     folders: ['app/Resources/views', 'src/AppBundle', 'tests/AppBundle', 'web/css', 'web/js']
+    #List of extensions you want to look for
+    extensions: ['css', 'js', 'php', 'sh', 'sql', 'twig']
 ```
 
 How to use

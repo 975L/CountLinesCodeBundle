@@ -1,5 +1,12 @@
 # Changelog
 
+v1.4
+----
+- Changes in `README.md` (16/08/2017)
+- Change about composer download in `README.md` (04/02/2018)
+- Add support in `composer.json`+ use of ^ for versions request (04/02/2018)
+- Added Command auto-wire to `services.yml` (20/02/2018)
+
 v1.3.5
 ------
 - Run PHP CS-Fixer (18/07/2017)
