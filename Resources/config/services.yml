@@ -4,14 +4,8 @@ services:
         autoconfigure: true
         public: true
 
-    c975L\EventsBundle\Command\:
+    c975L\CountLinesCodeBundle\Command\:
         resource: '../../Command/*'
-
-    c975L\EventsBundle\Controller\:
-        resource: '../../Controller/*'
-
-    c975L\EventsBundle\Service\:
-        resource: '../../Service/*'
 
     twig.text_extension:
         class: Twig_Extensions_Extension_Text

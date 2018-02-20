@@ -1,5 +1,9 @@
 # Changelog
 
+v1.4.1
+------
+- Corrected `services.yml` (20/02/2018)
+
 v1.4
 ----
 - Changes in `README.md` (16/08/2017)
