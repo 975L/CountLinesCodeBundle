@@ -1,5 +1,9 @@
 # Changelog
 
+v1.4.2.1
+--------
+- Corrected .gitignore (29/07/2018)
+
 v1.4.2
 ------
 - Removed required in composer.json (22/05/2018)
