@@ -1,5 +1,10 @@
 # Changelog
 
+v1.4.2.2
+--------
+- Added link to apidoc (20/08/2018)
+- Added link to BuyMeCoffee (20/08/2018)
+
 v1.4.2.1
 --------
 - Corrected .gitignore (29/07/2018)

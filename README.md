@@ -9,7 +9,9 @@ It goes through specified directories and counts the number of lines specified i
 
 CountLinesCodeBundle was forked from https://github.com/BastienL/Symfony2Loc.
 
-[CountLinesCode Bundle dedicated web page](https://975l.com/en/pages/count-lines-code-bundle).
+[CountLinesCodeBundle dedicated web page](https://975l.com/en/pages/count-lines-code-bundle).
+
+[CountLinesCodeBundle API documentation](https://975l.com/apidoc/c975L/CountLinesCodeBundle.html).
 
 Bundle installation
 ===================
@@ -68,3 +70,5 @@ $ php bin/console count:loc
 TODO
 ----
 Improve counting command
+
+**If this project help you to reduce time to develop, you can [buy me a coffee](https://www.buymeacoffee.com/LaurentMarquet) :)**
