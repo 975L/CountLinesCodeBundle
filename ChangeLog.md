@@ -1,5 +1,9 @@
 # Changelog
 
+v1.4.2.3
+--------
+- Added extra-information for documentation (21/08/2018)
+
 v1.4.2.2
 --------
 - Added link to apidoc (20/08/2018)
