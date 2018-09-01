@@ -1,5 +1,7 @@
 # Changelog
 
+- Updated composer.json (01/09/2018)
+
 v1.4.2.3
 --------
 - Added extra-information for documentation (21/08/2018)
