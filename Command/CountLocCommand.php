@@ -10,17 +10,17 @@
  */
 namespace c975L\CountLinesCodeBundle\Command;
 
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use Symfony\Component\Console\Style\SymfonyStyle;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use Symfony\Component\Console\Style\SymfonyStyle;
 
 /**
  * Console command to count lines of code in project, executed with 'count:loc'
  * @author Laurent Marquet <laurent.marquet@laposte.net>
  * @copyright 2017 975L <contact@975l.com>
  */
-class CountLocCommand extends ContainerAwareCommand
+class CountLocCommand extends Command
 {
     protected function configure()
     {
