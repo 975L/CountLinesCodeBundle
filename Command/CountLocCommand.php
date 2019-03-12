@@ -10,6 +10,7 @@
  */
 namespace c975L\CountLinesCodeBundle\Command;
 
+use c975L\ConfigBundle\Service\ConfigServiceInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -22,6 +23,18 @@ use Symfony\Component\Console\Style\SymfonyStyle;
  */
 class CountLocCommand extends Command
 {
+    /**
+     * Stores ConfigServiceInterface
+     * @var ConfigServiceInterface
+     */
+    private $configService;
+
+    public function __construct(ConfigServiceInterface $configService)
+    {
+        parent::__construct();
+        $this->configService = $configService;
+    }
+
     protected function configure()
     {
         $this
@@ -38,8 +51,8 @@ class CountLocCommand extends Command
         }
 
         //Gets data
-        $extensions = $this->getContainer()->getParameter('c975_l_count_lines_code.extensions');
-        $folders = $this->getContainer()->getParameter('c975_l_count_lines_code.folders');
+        $extensions = $this->configService->getParameter('c975_l_count_lines_code.extensions');
+        $folders = $this->configService->getParameter('c975_l_count_lines_code.folders');
 
         //Creates the command line to be executed
         $resultFinal = 0;

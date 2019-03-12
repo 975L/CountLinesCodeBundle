@@ -1,5 +1,11 @@
 # Changelog
 
+v1.4.4
+------
+- Added "c975l/config-bundle" as a dependency (11/03/2019)
+- Made use of `configService->getParameter()` (11/03/2019)
+- Added call of `parent::__construct();` for Command (11/03/2019)
+
 v1.4.3.1
 --------
 - Modified Dependencyinjection rootNode to be not empty (13/02/2019)
