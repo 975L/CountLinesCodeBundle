@@ -1,5 +1,9 @@
 # Changelog
 
+v1.4.4.1
+--------
+- Changed Github's author reference url (08/04/2019)
+
 v1.4.4
 ------
 - Added "c975l/config-bundle" as a dependency (11/03/2019)
