@@ -51,8 +51,8 @@ class CountLocCommand extends Command
         }
 
         //Gets data
-        $extensions = $this->configService->getParameter('c975_l_count_lines_code.extensions');
-        $folders = $this->configService->getParameter('c975_l_count_lines_code.folders');
+        $extensions = $this->configService->getParameter('c975LCountLinesCode.extensions');
+        $folders = $this->configService->getParameter('c975LCountLinesCode.folders');
 
         //Creates the command line to be executed
         $resultFinal = 0;

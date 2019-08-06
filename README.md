@@ -25,37 +25,14 @@ Use [Composer](https://getcomposer.org) to install the library
     composer require-dev c975l/countlinescode-bundle
 ```
 
-Step 2: Enable the Bundle
--------------------------
-Then, enable the bundle by adding it to the list of registered bundles
-in the `app/AppKernel.php` file of your project:
-
-```php
-<?php
-class AppKernel extends Kernel
-{
-    public function registerBundles()
-    {
-        $bundles = [
-            // ...
-        ];
-
-        if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
-            // ...
-            $bundles[] = new c975L\CountLinesCodeBundle\c975LCountLinesCodeBundle();
-        }
-    }
-}
-```
-
-Step 3: Define folders and extensions to look for
+Step 2: Define folders and extensions to look for
 -------------------------------------------------
-Then, in the `app/config_dev.yml` file of your project, define the following:
+Then, in the `/config/packages/dev/count_lines_codes.yaml` file of your project, define the following:
 
 ```yml
-c975_l_count_lines_code:
+c975LCountLinesCode:
     #List of folders you want to look for
-    folders: ['app/Resources/views', 'src/AppBundle', 'tests/AppBundle', 'web/css', 'web/js']
+    folders: ['src', 'templates', 'tests', 'public/css', 'public/js']
     #List of extensions you want to look for
     extensions: ['css', 'js', 'php', 'sh', 'sql', 'twig']
 ```
