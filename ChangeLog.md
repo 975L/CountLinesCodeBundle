@@ -1,5 +1,9 @@
 # Changelog
 
+v1.6
+----
+- Removed use of symplify/easy-coding-standard as abandonned (19/02/2020)
+
 v1.5
 ----
 - Removed declaration of twig.text_extension (06/08/2019)
