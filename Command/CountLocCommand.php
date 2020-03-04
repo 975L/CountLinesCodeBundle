@@ -42,6 +42,9 @@ class CountLocCommand extends Command
             ->setDescription('Count lines of code written in Symfony project');
     }
 
+    /**
+     * {@inheritdoc}
+     */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         //Creates tmp Directory if not exists
